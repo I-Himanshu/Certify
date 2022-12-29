@@ -1,29 +1,80 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>HTML content</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
-    <
-        <div class="outer-border">
-        <div class="inner-dotted-border">
-               <span class="certification">Certificate of Completion</span>
-               <br><br>
-               <span class="certify"><i>This is to certify that</i></span>
-               <br><br>
-               <span class="name"><b>Vinay Chitade</b></span><br/><br/>
-               <span class="certify"><i>has successfully completed the certification</i></span> <br/><br/>
-               <span class="fs-30">Node Developer</span> <br/><br/>
-               <span class="fs-20">with score of <b>A+</b></span> <br/><br/><br/><br/>
-               <span class="certify"><i>dated</i></span><br>
-              
-              <span class="fs-30">30 december,2022</span>
-        
-        </div>
-        </div>
-        
-  </body>
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      .outer-border {
+          width: 800px;
+          /* height: 650px; */
+        /* padding: 20px; */
+        text-align: center;
+        border: 10px solid #673ab7;
+        /* margin-left: 21%; */
+        width: 90%;
+        margin: 20px auto;
+        /* background: #f0f; */
+      }
+      
+      .inner-dotted-border {
+          /* width: 750px; */
+          /* width: calc(100% - 51px); */
+          /* height: 600px; */
+          padding: 20px;
+        padding: 70px 0;
+        text-align: center;
+        border: 5px solid #673ab7;
+        border-style: dotted;
+      }
 
+      .certification {
+        font-size: 50px;
+        font-weight: bold;
+        color: #663ab7;
+      }
+
+      .certify {
+        font-size: 25px;
+      }
+
+      .name {
+        font-size: 30px;
+        color: green;
+      }
+
+      .fs-30 {
+        font-size: 30px;
+      }
+
+      .fs-20 {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <!-- <body> -->
+    <body class="outer-border">
+      <div class="inner-dotted-border">
+        <span class="certification">Certificate of Completion</span>
+        <br /><br />
+        <span class="certify"><i>This is to certify that</i></span>
+        <br /><br />
+        <span class="name"><b>$NAME</b></span
+        ><br /><br />
+        <span class="certify"
+          ><i>has successfully completed the certification</i></span
+        >
+        <br /><br />
+        <span class="fs-30">$ROLE</span> <br /><br />
+        <span class="fs-20">with score of <b>$SCORE</b></span>
+        <br /><br /><br /><br />
+        <span class="certify"><i>dated</i></span
+        ><br />
+        <span class="fs-30">$DATE</span>
+      </div>
+  </body>
 </html>
